@@ -39,19 +39,6 @@ public class Equipo {
     @JoinColumn(name = "id_DT", referencedColumnName = "idDT")
     private DT dt;
 
-    public Equipo(long idEquipo, String nombre, Torneo nombreTorneo, List<Jugador> jugadores, List<Fixture> fixtureComoLocal, List<Fixture> fixtureComoVisitante, DT dt) {
-        this.idEquipo = idEquipo;
-        this.nombre = nombre;
-        this.nombreTorneo = nombreTorneo;
-        this.jugadores = jugadores;
-        this.fixtureComoLocal = fixtureComoLocal;
-        this.fixtureComoVisitante = fixtureComoVisitante;
-        this.dt = dt;
-    }
-    public Equipo()
-    {
-
-    }
 
     public long getIdEquipo() {
         return idEquipo;
